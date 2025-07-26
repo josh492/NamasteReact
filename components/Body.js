@@ -13,6 +13,8 @@ const Body = () => {
                 restaurant.info.name.toLowerCase().includes(searchText.toLowerCase())
             );
             setRestaurantList(filteredRestaurants);
+        }else{
+            setRestaurantList(restaurants);
         }
     }, [searchText])
 
